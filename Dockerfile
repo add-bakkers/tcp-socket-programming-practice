@@ -4,9 +4,9 @@ WORKDIR /app
 
 
 RUN apt update && apt install -y \
+    build-essential \
+    curl \
     git \
-    gcc \
-    gdb \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["sleep","infinity"]

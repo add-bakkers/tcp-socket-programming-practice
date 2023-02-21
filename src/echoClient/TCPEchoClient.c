@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <sys/socket>
+#include <sys/socket.h>
 #include <arpa/inet.h>
-#include <stdlin.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
     echoServAddr.sin_addr.s_addr = inet_addr(servIP);
     echoServAddr.sin_port = htons(echoServPort);
 
-    if (connect(sock, (struct sockaddr *)&echoAddr, sizeof(echoServAddr)) < 0)
+    if (connect(sock, (struct sockaddr *)&echoServAddr, sizeof(echoServAddr)) < 0)
     {
         DieWithError("connect() failed");
     }
