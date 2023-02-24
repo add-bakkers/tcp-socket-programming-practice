@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -O2 -Wall -Wextra -Werror -pedantic -std=c99 -Wno-sign-compare
 SOURCES=UDPEchoClient.c ../DieWithError.c 
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=echoServer
+EXECUTABLE=$(SOURCES:.c=)
 
 all: $(SOURCES) $(EXECUTABLE)
 
