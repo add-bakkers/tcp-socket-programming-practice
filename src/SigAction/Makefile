@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -O2 -Wall -Wextra 
-SOURCES=TCPEchoServer.c ../DieWithError.c ../HandleTCPClient.c 
+SOURCES=SigAction.c ../DieWithError.c 
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=$(SOURCES:.c=)
 

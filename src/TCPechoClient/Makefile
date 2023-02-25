@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O2 -Wall -Wextra -Werror -pedantic -std=c99 -Wno-sign-compare
+CFLAGS = -O2 -Wall -Wextra 
 SOURCES=TCPEchoClient.c ../DieWithError.c ../HandleTCPClient.c 
 OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE=$(SOURCES:.c=)
